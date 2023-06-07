@@ -1,27 +1,26 @@
 body {
-    background-color: rgb(25, 70, 25);
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    font-family: arial;
+    background-color: rgb(35, 95, 35);
+    padding: 0px;
 }
 #all-contents {
-  max-width: 800px;
-    margin: auto;
+  max-width: 100%;
 }
 
 /* navigation menu */
 nav {
-    background: rgb(117, 0, 0);
-   margin: 0 auto;
+    background: rgb(255, 255, 255);
+   margin: 100px;
    margin-bottom: 20px;
     display: flex;
-    padding: 10px;
-    color: rgb(255, 255, 255);
+    padding: 20px;
+    color: rgb(0, 107, 18);
+    background-image: linear-gradient(rgb(79, 0, 99), rgb(0, 0, 0));
+
 }
 h1 {
     display: flex;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 107, 18);
     flex: 1;
     margin: 0;
 }
@@ -34,42 +33,74 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(0, 107, 18);
 }
 
 /* main container area beneath menu */
 main {
-    background: rgb(245, 238, 219);
+    background: rgb(0, 0, 0);
     display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin-left: 16.6%;
+    border-radius: 10px;
+    margin: 100px;
+    
 }
-.sidebar {
-    margin-right: 25px;
-    padding: 10px;
-}
-.sidebar-img {
-    width: autopx;
-    height: auto;
-    object-fit: cover;
-    border: 10px outset red;
-}
+
+
 .content {
+    padding: 10px;
+    color: rgb(0, 107, 18);
+    background-color: rgb(79, 0, 99);
+    height: 300px;
     flex: 1;
-    padding: 15px;
-    background-color: black;
-    color: rgb(129, 0, 0);
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    text-align:justify;
+    
 }
+.word {
+    position: relative;
+    margin-left: 230px;
+}
+#sidebar {
+    position: relative;
+    background-color: rgb(255, 255, 255)
+}
+
+.sidebar-img {
+    max-height: 300px;
+    border: 10px outset rgb(119, 0, 0);
+    position: absolute;
+    margin-top: -31.5%;
+    left: 100px;
+    z-index: 2;
+    
+    
+    }
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px rgb(119, 0, 0) ridge;
     padding: 8px;
     border-radius: 10px;
-    background-color: rgb(95, 0, 95);
-    color: rgb(255, 255, 255);
-    font-family:serif red
+    background-color: rgb(53, 0, 53);
+    color: rgb(0, 107, 18);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+    background-image: linear-gradient(rgb(79, 0, 99), black);
+    margin-left: 330px;
+    margin-top: -24%;
+
 }
+
 h2, h3 {
     margin: 0px;
 }
-#grad {
-    background-image: linear-gradient(red, rgb(0, 0, 0));
+
+
