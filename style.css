@@ -3,18 +3,19 @@ body {
     padding: 0px;
 }
 #all-contents {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* navigation menu */
 nav {
     background: rgb(255, 255, 255);
-   margin: 100px;
-   margin-bottom: 20px;
+    margin: 100px;
+    margin-bottom: 20px;
     display: flex;
     padding: 20px;
     color: rgb(0, 107, 18);
     background-image: linear-gradient(rgb(79, 0, 99), rgb(0, 0, 0));
+    border:5px rgb(119, 0, 0) ridge;
 
 }
 h1 {
@@ -46,7 +47,7 @@ main {
     margin-left: 16.6%;
     border-radius: 10px;
     margin: 100px;
-    
+
 }
 
 
@@ -59,8 +60,8 @@ main {
     position: relative;
     z-index: 1;
     border-radius: 10px;
-    text-align:justify;
-    
+    text-align: justify;
+    background-image: linear-gradient(rgb(79, 0, 99), black);
 }
 .word {
     position: relative;
@@ -78,16 +79,16 @@ main {
     margin-top: -31.5%;
     left: 100px;
     z-index: 2;
-    
-    
-    }
 
-/* portfolio styles */
+
+}
+
+/* important */
 #interests {
     border: 4px rgb(119, 0, 0) ridge;
     padding: 8px;
     border-radius: 10px;
-    background-color: rgb(53, 0, 53);
+    
     color: rgb(0, 107, 18);
     position: absolute;
     width: 200px;
@@ -99,8 +100,29 @@ main {
 
 }
 
-h2, h3 {
+h2,
+h3 {
     margin: 0px;
 }
 
-
+/* portfolio styles */
+.content h1 {
+    color: black;
+}
+#portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+#portfolio li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#portfolio li:hover {
+    background: #eee;
+}
+#portfolio a {
+    text-decoration: none;
+    color: #454545;
+}
