@@ -44,13 +44,12 @@ main {
     max-width: 100%;
     max-height: 100%;
     margin: 100px;
-    height: 310px;
+    height: 320px;
     border: 1px solid rgb(255, 0, 0)
 
 }
 table, th, td {
     border-collapse: collapse;
-    border: 1px solid rgb(255, 0, 0)
 }
 th, td {
     color: red;

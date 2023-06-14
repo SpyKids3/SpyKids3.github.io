@@ -15,11 +15,13 @@ $(function () {
       //start game
       setInterval(main, 1000 / frameRate);
     }
-    //create walls
+    //create walls    
     createPlatform(-50, -50, canvas.width + 100, 50); //top
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
+    
+
 
     /**
      * Uncomment the loops below to add a "grid" to your platformer game's screen
@@ -47,13 +49,12 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform(120, 700, 100, 50)
-    createPlatform(300, 640, 200, 100);
-    createPlatform(600, 550, 200, 190);
-    createPlatform(900, 460, 200, 290);
-    createPlatform(1200, 370, 200, 380);
-    createPlatform(0, 250, 1120, 10)
-
+      createPlatform(120, 700, 100, 50)
+      createPlatform(300, 640, 200, 100);
+      createPlatform(600, 550, 200, 190);
+      createPlatform(900, 460, 200, 290);
+      createPlatform(1200, 370, 200, 380);
+      createPlatform(0, 250, 1120, 10)
 
 
     

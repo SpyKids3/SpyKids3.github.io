@@ -358,26 +358,33 @@ function projectileCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "red";
   ctx.fillRect(
     canvas.width / 4,
-    canvas.height / 6,
-    canvas.width / 2,
+    canvas.height / 4,
+    canvas.width / 1.9,
     canvas.height / 2
   );
   ctx.fillStyle = "black";
-  ctx.font = "800% serif";
+  ctx.font = "600% serif";
   ctx.fillText(
-    "You are dead",
+    "Sanke talk to me!",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
   ctx.font = "500% serif";
   ctx.fillText(
-    "Hit any key to restart",
+    "Snake...Snake!",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 3,
+    (canvas.width / 16) * 14
+  );
+  ctx.font = "500% serif";
+  ctx.fillText(
+    "SNAAAAAAAAKE!",
+    canvas.width / 4,
+    canvas.height / 6 + canvas.height / 2,
     (canvas.width / 16) * 14
   );
   if (keyPress.any) {
@@ -411,7 +418,7 @@ function playerFrictionAndGravity() {
 
 function drawPlatforms() {
   for (var i = 0; i < platforms.length; i++) {
-    ctx.fillStyle = "grey";
+    ctx.fillStyle = "black";
     ctx.fillRect(
       platforms[i].x,
       platforms[i].y,
@@ -420,6 +427,7 @@ function drawPlatforms() {
     );
   }
 }
+
 
 function drawProjectiles() {
   for (var i = 0; i < projectiles.length; i++) {
