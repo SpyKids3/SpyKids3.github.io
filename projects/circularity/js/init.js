@@ -47,7 +47,7 @@ var init = function (window) {
         and check to see if it has drifted off the screen.         
         */
         function update() { 
-            for (var i = 0; i < circles.length; i++) { }
+            
             // TODO 4 : Update the circle's position //
             for (var i = 0; i < circles.length; i++) { 
                 physikz.updatePosition(circles[i])
